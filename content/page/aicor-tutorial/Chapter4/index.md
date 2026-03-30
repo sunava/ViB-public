@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-On Chapter 4, you will integrate all components learned in the previous sessions to complete the milk delivery task.
+In the final Chapter 4, you will integrate all components learned in the previous sessions to complete the milk delivery task.
 You will plan and execute the full sequence of actions from opening the fridge to placing the milk on the table.
 
 For Entering Chapter four click here:
@@ -84,13 +84,12 @@ For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-s
 
 
 ## Summary
-By the end of this session, you will have a clear understanding of how to integrate various components to achieve complex robotic tasks.
-
+By the end of this session, you will know how to combine perception, knowledge querying, and motion planning into a single robot task execution. Thanks for working through this tutorial. Any feedback is welcome and helps us improve the course.
 ## Further Reading/Exercises
 - Explore alternative strategies for task execution, including different object placements and adjustments to the environment.
 - Discuss the differences between real-world gaps versus simulation limitations and how to manage them effectively.
 
-Multiverse Application:
+Multiverse Video:
 ---
 Box Opening and Object Storage Reasoning:
 <figure class="video_container">
@@ -108,7 +107,7 @@ Human-Robot Interaction in VR:
   </video>
 </figure>
 
-Isaac Sim Integration with ROS1
+Isaac Sim Integration with ROS
 <figure class="video_container">
   <video width="100%%" height="300" autoplay loop muted controls>
     <source src="img/IsaacSimShort.mp4" type="video/mp4">
