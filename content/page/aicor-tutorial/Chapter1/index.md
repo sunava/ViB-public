@@ -22,11 +22,9 @@ For Entering Chapter one click here:
 </div>
 
 <!--more-->
-
 # Welcome to the First Chapter of Our Hands-On Course!
 
-
-In dynamic robotic environments, scene graphs are a way to represent complex spatial relationships. They act as the backbone of a robot’s understanding, mapping “who is where” and “what connects to what” in complex, dynamic spaces. With scene graphs, robots can navigate, adapt, and interact intelligently, as you'll see in the video of our lab simulation. This technology is essential for enabling robots to perform tasks in real-world-like settings—think seamless object handling, precise navigation, and real-time adaptability. By additionally linking the scene graph to a semantic knowledge base, robots gain a higher level of contextual awareness, allowing them to reason about the environment, anticipate changes, and make informed decisions, bringing us closer than ever to fully autonomous, perceptive machines.
+In dynamic robotic environments, scene graphs represent complex spatial relationships. They map "who is where" and "what connects to what" in complex, dynamic spaces. With scene graphs, robots can navigate, adapt, and interact intelligently, as you'll see in the video of our lab simulation. By linking the scene graph to a semantic knowledge base, robots gain contextual awareness, allowing them to reason about the environment, anticipate changes, and make informed decisions.
 
 <figure class="video_container">
   <video width="100%%" height="300" autoplay loop muted controls>
@@ -47,25 +45,20 @@ By the end of this session, you will have worked with a simple URDF model that i
 ## Theoretical Background
 
 ### What is URDF?
-URDF stands for Unified Robot Description Format. As the name suggests, it was originally designed for describing robots, specifically their physical structure and properties. A robot is an electromechanical device composed of multiple bodies (also called links) connected by joints. Each link represents a physical part of the robot, and joints define how these parts move relative to each other.
 
-However, URDF is not limited to describing robots. In this course, we use it as a tool for defining and simulating an entire environment as a scene graph. This means we use URDF to model various elements in the environment, such as furniture, objects, and other items with which the robot will interact.
+URDF stands for Unified Robot Description Format. It was originally designed for describing robots, specifically their physical structure and properties. A robot is an electromechanical device composed of multiple bodies (also called links) connected by joints. Each link represents a physical part of the robot, and joints define how these parts move relative to each other.
 
-URDF helps create a virtual representation of an environment, as seen in the video above, by defining the structure, shape, and physical properties of the objects involved. This details are crucial for creating realistic interactions in simulations, enabling robots to understand their surroundings and perform tasks effectively.
+URDF is not limited to describing robots. In this course, we use it to define and simulate an entire environment as a scene graph, modeling furniture, objects, and other items the robot will interact with. It creates a virtual representation of an environment by defining the structure, shape, and physical properties of objects, which is crucial for realistic simulations.
 
 ### Links and Joints in URDF
-A link in a URDF model represents a physical object in the environment, which could be as simple as a box or as complex as a piece of furniture. A link is defined by several parameters, including:
-- **Visual Parameter**: Defines how the link appears in the simulation.
-- **Collision Parameter**: Defines the simplified shape used to detect collisions, which is generally simpler than the visual parameter to reduce computational load.
-- **Inertial Parameter**: Defines how the link behaves under physical forces, which is important for physics-based simulations like those in Gazebo.
 
 <div style="flex:30%;">
   <img src="https://intel4coro.informatik.uni-bremen.de/pluginfile.php/1/core_h5p/content/321/images/image-ipPVnv7e.png">
 </div>
 
-Joints connect different links and define how they move relative to each other. In an environment model, joints can be used to define relationships such as doors on a fridge that can open or the legs of a table attached to its surface.
-
-Now, let's see how two links can be connected. In environmental models, two types of joints are particularly useful for describing how parts of furniture or other items behave. Revolute joints can perform a rotary motion, like a door hinge that allows a fridge door to swing open. Prismatic joints, on the other hand, can perform a linear motion, such as a drawer sliding in and out of a cabinet. These two types of joints are fundamental in modeling dynamic objects in the environment, helping simulate realistic interactions that robots may need to handle effectively. The two following images show examples of prismatic and revolute joints.
+- Visual: defines how the link appears in the simulation.
+- Collision: defines the simplified shape used to detect collisions, kept simpler than the visual to reduce computational load.
+- Inertial: defines how the link behaves under physical forces, important for physics-based simulations like Gazebo.
 
 <div style="flex:30%;">
   <img src="https://intel4coro.informatik.uni-bremen.de/pluginfile.php/1/core_h5p/content/321/images/image-5YhDtul2.png">
@@ -79,25 +72,18 @@ A joint in URDF defines how two links are connected and how they move relative t
 
 ## Hands-On Exercise 1
 
-### Step-by-Step Hands-On Exercises
-1. **Load a Basic URDF File Structure and visualize it**
-2. **Add and modifiy Objects in the Scene Graph**: Integrate models for the fridge, table, and other essential items into your URDF.
+1. Load a basic URDF file structure and visualize it.
+2. Add and modify objects in the scene graph: integrate models for the fridge, table, and other essential items.
 
-### Summary
-By the end of the session, you will have a working URDF environment, and you will understand the process of creating and visualizing a scene graph in URDF.
+By the end of this session, you will have a working URDF environment and understand how to create and visualize a scene graph in URDF. Throughout the exercises, code examples demonstrate how to define links, joints, and meshes.
 
-Throughout the exercises, we will provide code examples to demonstrate how to define links, joints, and meshes effectively.
+To run the interactive Hands-On Tutorial, click here: <a class="btn btn-success" target="_blank" href="(https://binder.intel4coro.de/v2/gh/IntEL4CoRo/ease_fall_school_2024/33c5e5c?urlpath=lab%2Ftree%2Fday1%2FURDF.ipynb">URDF Hands-On Lab</a>
 
-To run the interactive Hands-On Tutorial follow please click this button:
 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/ease_fall_school_2024/33c5e5c?urlpath=lab%2Ftree%2Fday1%2FURDF.ipynb">URDF Hands-On Lab</a>
+## Further Reading
 
-## Further Reading/Exercises
-
-For those interested in exploring more, we’ll provide links to additional ROS URDF tutorials and Gazebo documentation.
-
-- A in-depth tutorial for URDF can be found <a href="https://wiki.ros.org/ROS/Tutorials">here</a>
-- **Challenge**: Try adding a new object, like a cup, to your environment and adjust its position to fit the scene. This will help reinforce your understanding of how to modify URDF files.
+- An in-depth URDF tutorial can be found [here](https://wiki.ros.org/ROS/Tutorials).
+- **Challenge**: Try adding a new object, like a cup, to your environment and adjust its position to fit the scene.
 
 ---
 
@@ -118,7 +104,7 @@ Knowledge representation in robotics is a way to organize information so that ro
 
 Knowledge graphs and ontologies are a fundamental tool in knowledge representation, particularly useful for organizing and connecting information about objects, actions, and their relationships in a meaningful way. Ontologies define the core concepts, relationships, and rules in a domain—like what “Grasping” means and the requirements for it. Knowledge graphs, built on these ontologies, hold specific instances and connections, such as a particular milk carton on a table. This structure allows robots to answer targeted questions, like "What objects do I need for breakfast?". By combining both, robots gain a flexible framework for reasoning, integrating broad concepts with real-time, specific data. <!-- Resource Description Framework (RDF) and Web Ontology Language (OWL) are two key technologies used in this context. RDF provides a standard way to represent data in the form of subject-predicate-object triples, allowing robots to understand facts about their environment. OWL, on the other hand, is used to define complex relationships between entities and establish richer semantics, enabling robots to perform more sophisticated reasoning. Together, RDF and OWL provide a powerful foundation for building knowledge graphs that enhance the cognitive abilities of robots. -->
 
-SOMA (Socio-physical Model of Activities) is an example of a robot ontology that integrates both the physical and social aspects of activities to enhance the reasoning capabilities of robotic agents. It enables autonomous robots to interpret and execute everyday tasks by connecting physical actions with socially constructed knowledge. By representing the roles that objects can play, SOMA allows robots to reason about object affordances and activities in a flexible manner. This ontological approach provides a structured framework that helps robots deal with underspecified tasks, similar to how humans use context and experience to fill in gaps, thereby enabling robots to plan and adapt actions effectively to achieve their goals.
+Knowledge representation in robotics organizes information so that robots can reason about the world. It encodes relationships between objects, actions, and properties, allowing robots to interpret and interact with their environment. This enables robots to make informed decisions, understand complex instructions, and adapt to dynamic environments. The diagram below shows how a knowledge processing system could look: the scene graph connects to the knowledge graph, which a reasoner then uses to answer questions like "Which objects do I need for breakfast?" or "Which objects contain something to drink?"
 
 <div style="flex:30%;">
   <img src="img/soma-vowl-zoomed.png">
@@ -167,53 +153,31 @@ def Xform "world" () {
   }
 
   def Xform "box_flap_1" ( ... ) { ... }
-
   def Xform "box_flap_2" ( ... ) { ... }
 }
 ```
-
-#### USD as the Translation Medium for Scene Descriptions
-
-Each simulation software uses its own scene description format: MuJoCo employs MJCF, Unreal Engine uses FBX, Omniverse utilizes USD, and ROS is compatible with URDF. In the previous tutorial, we generated an environment scene description in URDF. Now, we need to convert this URDF scene into USD. For this, we use the [Multiverse Parser](https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/c578396?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_parser_quick_start.ipynb), which can convert and standardize scenes across various formats. The parser optimizes, standardizes, and translates scenes into USD, making it easier to convert them into other formats when needed.
-
-<div style="flex:30%;">
-  <img src="img/MultiverseParser.png">
-</div>
-
-
-#### Translation USD Scene Descriptions into Knowledge Graphs
-
-The translation of a USD scene into a knowledge graph involves three steps. The first step is to establish a USD layer containing class prims representing the TBox ontology. Another layer representing
-the scene graph imports the TBox USD layer and uses a custom API to tag prims with ontological concepts. The semantic USD scene graph are then translated into the KG.
-
-<div style="flex:30%;">
-  <img src="img/multiverse_knowledge.png">
-</div>
-
-
-
-## Further Reading/Exercises
-
-Explore the concept of Semantic Digital Twins in more detail through provided research papers and tutorials.
-
-- A more in-depth tutorial for OWL and RDF can be found [here](https://cambridgesemantics.com/blog/semantic-university/learn-owl-rdfs/owl-101/)
-- Publication for the USD scenes translation into knowledge graphs:
-  - [Giang Nguyen, Daniel Beßler, Simon Stelter, Mihai Pormalan and Michael Beetz, "Translating universal scene descriptions into knowledge graphs for robotic environment." 2024 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2024.](https://ieeexplore.ieee.org/iel8/10609961/10609862/10611691.pdf)
-
-- Publication for the SOMA ontology:
-  - [Daniel Beßler, Robert Porzel, Mihai Pomarlan, Abhijit Vyas, Sebastian Höffner, Michael Beetz, Rainer Malaka and John Bateman, "Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents", In Formal Ontology in Information Systems - Proceedings of the 12th International Conference, FOIS 2021, Bozen-Bolzano, Italy, September 13-16, 2021, IOS Press, 2021, doi:10.3233/FAIA210379](https://ai.uni-bremen.de/papers/bessler21soma.pdf)
-- KnowRob, as a reasoning engine for Knowledge Graphs:
-  - [Github](https://github.com/knowrob/knowrob)
-  - [KnowRob 2.0 – A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents (Michael Beetz, Daniel Beßler, Andrei Haidu, Mihai Pomarlan, Asil Kaan Bozcuoglu and Georg Bartels), In International Conference on Robotics and Automation (ICRA), 2018](https://ai.uni-bremen.de/papers/beetz18knowrob.pdf)
-- openEASE Knowledge Service Laboratory, can be found [here](http://localhost:1313/page/labs/openease-knowledge-service-laboratory/)
 - **Challenge**: Try creating an OWL from your own environment and find interesting queries!
 
+
+## Further Reading
+
+- An in-depth tutorial for OWL and RDF can be found [here](https://cambridgesemantics.com/blog/semantic-university/learn-owl-rdfs/owl-101/).
+- Publication for the USD scene translation into knowledge graphs:
+  - [Giang Nguyen, Daniel Beßler, Simon Stelter, Mihai Pormalan and Michael Beetz, "Translating universal scene descriptions into knowledge graphs for robotic environment." ICRA 2024. IEEE, 2024.](https://ieeexplore.ieee.org/iel8/10609961/10609862/10611691.pdf)
+- Publication for the SOMA ontology:
+  - [Daniel Beßler et al., "Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents", FOIS 2021, IOS Press, 2021.](https://ai.uni-bremen.de/papers/bessler21soma.pdf)
+- Knowledge base, as a reasoning engine for Knowledge Graphs:
+  - [Github](https://github.com/knowrob/knowrob)
+  - [Knowledge base 2.0 – A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents (Michael Beetz et al.), ICRA 2018.](https://ai.uni-bremen.de/papers/beetz18knowrob.pdf)
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
 
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
   <div style="flex:30%;">
-      <img src="img/yanxiang.jpg" style="clip-path: circle(45%);">
+      <img src="img/yanxiang.jpg" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
@@ -224,15 +188,12 @@ Explore the concept of Semantic Digital Twins in more detail through provided re
     </a>
   </div>
 </div>
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-
-
-
+</div>
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="img/vanessa.jpg" style="clip-path: circle(39%);">
+      <img src="img/vanessa.jpg" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
@@ -244,7 +205,6 @@ Explore the concept of Semantic Digital Twins in more detail through provided re
     </a>
   </div>
 </div>
-
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
