@@ -24,7 +24,7 @@ To understand the course, we will provide a brief overview of the entire course.
 <!--more-->
 
  <h1> Welcome to PR2's first Mission!</h1>
-```markdown
+
 ## Welcome to PR2's first Mission!
 
 **The Story**
