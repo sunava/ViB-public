@@ -24,7 +24,7 @@ For Entering Chapter two click here:
 
 
 <h1> Welcome to the second day of our hands-on course!</h1>
-Today, you'll dive into the basics of robot movement and perception. You will learn how to navigate the robot to a designated location (like a table) and utilize sensors to detect objects, specifically focusing on a milk carton.
+Today, you'll dive into the basics of robot movement( and perception). You will learn how to navigate the robot to a designated location (like a table) and utilize sensors to detect objects, specifically focusing on a milk carton.
 
 **Goal**: By the end of the session, you will successfully move the robot to a table.
 
@@ -46,8 +46,8 @@ PyCRAM allows the execution of the same high-level plan on different robot platf
   <img src="img/boxy.webp" alt="Image 2" style="width: 45%;"/>
 </div>
 
-For more information on PyCRAM, please visit the [PyCRAM Documentation](https://pycram.readthedocs.io/en/latest/) 
-and Github repository [here](https://github.com/cram2/pycram).
+For more information on PyCRAM, please visit the [PyCRAM Documentation](https://cram2.github.io/cognitive_robot_abstract_machine/pycram/) 
+and Github repository [here](https://github.com/cram2/cognitive_robot_abstract_machine/tree/main/pycram).
 
 #### Designators
 
@@ -147,19 +147,6 @@ RoboKudo Overview:
     Mail: <a href="mailto:jdech@uni-bremen.de">jdech@uni-bremen.de</a> <br>
     <a style="color:red" href="https://ai.uni-bremen.de/team/jonas_dech">
         <span style="font-size: 15px;">Profile Jonas Dech</span>
-    </a>
-  </div>
-</div>
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-  <div style="flex:30%;">
-      <img src="img/max.jpg" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3> Max Gandyra </h3>
-    Mail: <a href="mailto:gandyra@uni-bremen.de">gandyra@uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/max_gandyra">
-        <span style="font-size: 15px;">Profile Max Gandyra</span>
     </a>
   </div>
 </div>
