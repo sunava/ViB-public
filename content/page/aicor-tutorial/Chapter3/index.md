@@ -36,8 +36,8 @@ Today, you will focus on understanding how a knowledge base supports robotic dec
 - We will provide an overview of how knowledge bases operate in the context of robotics.
 - You'll learn how the robot can understand the need to open the fridge door to perceive the milk inside.
 
-#### KnowRob: Knowledge processing for robots
-KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques 
+#### Knowledge Base: Knowledge processing for robots
+In this example we use KnowRob. KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques 
 for acquiring knowledge and for grounding the knowledge in a physical system and can serve as a common semantic framework for integrating information from different sources. 
 KnowRob combines static encyclopedic knowledge, common-sense knowledge, task descriptions, environment models, 
 object information and information about observed actions that has been acquired from various sources (manually axiomatized, derived from observations, or imported from the web).
@@ -98,22 +98,6 @@ You will have learned how to query the knowledge base to determine the necessary
       <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
     </a>
   </div>
-</div>
-
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-
-  <div style="flex:30%;">
-      <img src="img/alina.jpg" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3> Alina Hawkin</h3>
-    Tel: +49 421 218 64024 <br>
-    Mail: <a href="mailto:hawkin@uni-bremen.de">hawkin@uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/alina_hawkin">
-        <span style="font-size: 15px;">Profile Alina Hawkin</span>
-    </a>
-</div>
 </div>
 
 
